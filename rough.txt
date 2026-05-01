@@ -1,0 +1,13 @@
+D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>pip install uv
+
+D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>uv venv ecommercepydanticenv
+
+D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>ecommercepydanticenv\Scripts\activate
+
+[don't do](ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>deactivate
+
+requirements.txt
+
+(ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>uv pip install -r requirements.txt
+
+Github repository => E-Commerce_ClothingStore
