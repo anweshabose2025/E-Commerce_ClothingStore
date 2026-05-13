@@ -6,8 +6,62 @@ D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-
 
 [don't do](ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>deactivate
 
-requirements.txt
+Make requirements.txt
 
 (ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>uv pip install -r requirements.txt
 
-Github repository => E-Commerce_ClothingStore
+Make .gitignore
+
+Make Github repository => E-Commerce_ClothingStore
+
+echo "# E-Commerce_ClothingStore" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/anweshabose2025/E-Commerce_ClothingStore.git
+git push -u origin main
+
+Make .env
+
+[don't do already written in requirements.txt](ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>uv add logfire
+
+(ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>uv run logfire auth
+Logfire is available in multiple data regions. Please select one:
+1. US (GCP region: us-east4)
+2. EU (GCP region: europe-west4)
+Selected region [1/2]: 1
+Press Enter to open logfire-us.pydantic.dev in your browser...
+
+Please open https://logfire-us.pydantic.dev/auth/device/4S1HGPuZ9fHdWrocuwcwtWAIDFL0HFCdQuw-_q9xF-c in your browser to authenticate if it hasn't already.
+Waiting for you to authenticate with Logfire...
+Successfully authenticated!
+
+(ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>uv run logfire projects use e-commerce-clothing-store
+Project configured successfully. You will be able to view it at: https://logfire-us.pydantic.dev/anwesha-bose/e-commerce-clothing-store
+
+(ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>python
+Python 3.13.7 (main, Sep  2 2025, 14:16:00) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import logfire
+>>> logfire.configure()
+Logfire project URL: https://logfire-us.pydantic.dev/anwesha-bose/e-commerce-clothing-store
+<logfire._internal.main.Logfire object at 0x000002975B39B8C0>
+>>> logfire.info('Hello, {place}!', place='World')
+<python-input-2>:1: InspectArgumentsFailedWarning: Failed to introspect calling code. Please report this issue to Logfire. Falling back to normal message formatting which may result in loss of information if using an f-string. Set inspect_arguments=False in logfire.configure() to suppress this warning. The problem was:
+No source code available. This happens when running in an interactive shell, using exec(), or running .pyc files without the source .py files.
+02:22:48.263 Failed to introspect calling code. Please report this issue to Logfire. Falling back to normal message formatting which may result in loss of information if using an f-string. Set inspect_arguments=False in logfire.configure() to suppress this warning. The problem was:
+No source code available. This happens when running in an interactive shell, using exec(), or running .pyc files without the source .py files.
+02:22:48.281 Hello, World!
+>>> exit()
+
+(ecommercepydanticenv) D:\KrishNaik_IndustryProjects\GenAI_Powered_Clothing_Store_with_PydanticAI\self-done>uv pip install ipykernel
+
+Make experiments folder (just for understanding of mongodb, pydantic ai)
+
+made the schema folders. Backend, Frontend, 
+
+In Backend, made database.py => pydanticmodel.py
+
+Made routes folder => cart.py => orders.py => chatbot.py => products.py
+
